@@ -192,15 +192,6 @@ python 0_Run_Files/gui_main.py
 
 ---
 
-## 👥 Tác giả
-
-* **Tên**: Dinh Long Bui
-* **GitHub**: [Bigghead1205](https://github.com/Bigghead1205)
-* **Đơn vị**: Customs & Compliance Team, TTI Vietnam
-* **Liên hệ**: [DinhLong.Bui@ttigroup.com.vn](mailto:DinhLong.Bui@ttigroup.com.vn) (nội bộ)
-
----
-
 ## 🌌 License
 
 Private Internal Tool – For internal use only at TTI Vietnam
