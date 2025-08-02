@@ -156,6 +156,7 @@ python 0_Run_Files/gui_main.py
 
 Sẽ hiện giao diện gồm:
 
+* **User Account**: (VD: `SCDLBUI`)
 * **Email Account**: (VD: `DinhLong.Bui@ttigroup.com.vn`)
 * **Email Folder Path**: (VD: `CUS > CUS MACHINE > ERP PO`)
 * **Output Folder**: Thư mục lưu kết quả (có thể để mặc định)
