@@ -172,10 +172,10 @@ Sẽ hiện giao diện gồm:
 Tại thư mục output sẽ có:
 
 ```
-/Scanned PO/
-├── log/              ➞ log kết quả
-├── PO_Filtered/      ➞ file PDF cần CDs theo Entity
-└── temp/            ➞ file tạm thời
+/<thư mục bạn chọn>/
+├── log/ → Ghi log phân loại PO & trạng thái email
+├── PO_Filtered/ → Lưu file PDF các PO cần CDs (chia theo Entity)
+└── temp/ → File tải tạm, sẽ bị xoá sau khi xử lý
 ```
 
 ---
