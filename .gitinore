@@ -1,0 +1,16 @@
+# Bỏ qua các file biên dịch và cache
+__pycache__/
+*.pyc
+
+# Thư mục log và file lỗi
+log/
+*.log
+
+# Dữ liệu đầu vào tạm
+temp/
+*.xlsx
+*.csv
+
+# File hệ thống
+.DS_Store
+Thumbs.db

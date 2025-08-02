@@ -1,0 +1,12 @@
+1. Tạo 1 lần text dùng chung cho tất cả extractor
+2. Dùng Queue & ThreadPoolExecutor để push kết quả vào memory và ghi file 1 lần cuối
+3. Tách rõ "download file" và "scan content" → song song hóa dễ hơn
+4. OK nhưng nên cache danh sách non_cds_sellers khi chạy nhiều lần
+5. Gom vào class POExtractor để tái sử dụng
+6. Dùng jinja2 để tách phần BODY_TEMPLATE & template render rõ ràng hơn
+7. config.py → chuyển sang dạng class Settings để dễ import, override (ví dụ: dùng dotenv hoặc argparse cho CLI).
+8. Chuyển resolve_email sang module utils (hiện đang dùng 2 lần trong m01_email_reader.py).
+9. unit test: ít nhất cho các hàm extract_, determine_need_cds, get_attachments.
+10. try-catch: bao quanh từng email để không fail cả batch.
+11. log/error.txt: ghi các PDF không đọc được + lý do (OCR fail? sai định dạng?).
+12. → Tách riêng bước download_attachment và process_pdf_file → cho phép xử lý đồng thời tốt hơn.

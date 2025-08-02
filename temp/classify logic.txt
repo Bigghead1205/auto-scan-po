@@ -1,0 +1,15 @@
+if [Currency] # "VND"
+-> [CDs] = "Yes"
+else:
+	if [VAT] not include "0%"
+	-> [CDs] = "No"
+	elif [UOM] = "UNIT"
+	-> [CDs] = "No"
+	elif seller_clean in non_cds_sellers
+	-> [CDs] = "No" 
+	elif [Max Unit Price] > 30000000
+	-> [CDs] = "Yes"
+	else:
+		if [UOM] not include {PIECE; SET}
+		-> [CDs] = "No"
+		else [CDs] = "Yes"
