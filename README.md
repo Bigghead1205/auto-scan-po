@@ -137,7 +137,7 @@ Tự động hóa quá trình xử lý email PO, phân loại lô hàng có cầ
 ### ✅ Bước 3: Cài tool
 
 1. Mở thư mục vừa giải nén `auto-scan-po`
-2. Giữ Shift + chuột phải → Chọn **Open PowerShell/CMD here**
+2. Chạy cmd cd tới thư mục chứa tool
 3. Gõ:
 
 ```bash
