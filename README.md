@@ -105,3 +105,102 @@ python gui_main.py
 ## 📄 License
 
 Private internal tool – Customs & Compliance team – TTI Vietnam.
+
+# 📎 Auto Scan PO - Customs Classification Assistant
+
+**Mục tiêu:**
+Tự động hóa quá trình xử lý email PO, phân loại lô hàng có cần khai báo hải quan (CDs) hay không, và gửi yêu cầu bổ sung thông tin cho supplier phục vụ khai báo HS code.
+
+---
+
+## 🔧 Dành cho người KHÔNG rành lập trình
+
+### ✅ Bước 1: Tải Tool
+
+1. Truy cập GitHub: [https://github.com/Bigghead1205/auto-scan-po](https://github.com/Bigghead1205/auto-scan-po)
+2. Bấm **Code → Download ZIP**
+3. Giải nén file ZIP ra thư mục (gợi ý: Desktop)
+
+---
+
+### ✅ Bước 2: Cài đặt Python (chỉ làm 1 lần)
+
+1. Tải Python: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+2. Bấm **Download Python 3.10.x**
+3. Cài đặt:
+
+   * Tick ✨ **Add Python to PATH**
+   * Bấm **Install Now**
+
+---
+
+### ✅ Bước 3: Cài tool
+
+1. Mở thư mục vừa giải nén `auto-scan-po`
+2. Giữ Shift + chuột phải → Chọn **Open PowerShell/CMD here**
+3. Gõ:
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+---
+
+### ✅ Bước 4: Chạy tool
+
+```bash
+python 0_Run_Files/gui_main.py
+```
+
+Sẽ hiện giao diện gồm:
+
+* **Email Account**: (VD: `DinhLong.Bui@ttigroup.com.vn`)
+* **Email Folder Path**: (VD: `CUS > CUS MACHINE > ERP PO`)
+* **Output Folder**: Thư mục lưu kết quả (có thể để mặc định)
+
+✉ Bấm **Fetch Emails** → Tool sẽ quét PDF & xử lý.
+
+✉ Sau đó chọn Entity & nhấn **Send Email for Selected**
+
+---
+
+### ✅ Bước 5: Kiểm tra kết quả
+
+Tại thư mục output sẽ có:
+
+```
+/Scanned PO/
+├── log/              ➞ log kết quả
+├── PO_Filtered/      ➞ file PDF cần CDs theo Entity
+└── temp/            ➞ file tạm thời
+```
+
+---
+
+## 🔧 Dành cho người biết Git (tuỳ chọn)
+
+```bash
+git clone https://github.com/Bigghead1205/auto-scan-po.git
+cd auto-scan-po
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python 0_Run_Files/gui_main.py
+```
+
+---
+
+## 👥 Tác giả
+
+* **Tên**: Dinh Long Bui
+* **GitHub**: [Bigghead1205](https://github.com/Bigghead1205)
+* **Đơn vị**: Customs & Compliance Team, TTI Vietnam
+* **Liên hệ**: [DinhLong.Bui@ttigroup.com.vn](mailto:DinhLong.Bui@ttigroup.com.vn) (nội bộ)
+
+---
+
+## 🌌 License
+
+Private Internal Tool – For internal use only at TTI Vietnam
